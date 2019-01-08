@@ -20,7 +20,7 @@ if ( !defined('BASEURL') )
     define('BASEURL', '/lolrpwnz/');
 
 if( !defined('WEBSITE_NAME')) {
-    define('WEBSITE_NAME', 'lolrpwnz');
+    define('WEBSITE_NAME', 'Godzamy');
 }
 
 /** caminho do arquivo de banco de dados **/

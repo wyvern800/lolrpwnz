@@ -18,7 +18,7 @@
             <p>Esse site foi criado para facilitar a vida dos meus viewers e tamb&eacutem a minha.
             Sou webdesigner nas horas vagas e streamer por amor, e esse foi o motivo de eu faz&ecirc-la.
             Aqui v&atildeo algumas fotos dos meus melhores momentos nas streams.
-            Sim, isso &eacute s&oacute para ter um conte&uacutedo at&eacute eu terminar a p&aacutegina haha! <3 </p>
+            Sim, isso &eacute s&oacute para ter um conte&uacutedo at&eacute eu terminar a p&aacutegina haha! ♥ </p>
             <div class="row">
                 <div class="col-md-4">
                     <div class="thumbnail">

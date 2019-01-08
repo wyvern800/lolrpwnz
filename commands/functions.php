@@ -87,7 +87,7 @@ function select_category() {
     $con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
     # here database details
     mysqli_select_db($con, DB_NAME);
-    $result = mysqli_query($con, 'SELECT * FROM categories WHERE status = 1 ORDER BY categoryname ASC LIMIT  0,6');
+    $result = mysqli_query($con, 'SELECT * FROM categories WHERE status = 1 ORDER BY categoryname ASC');
     echo "<select class='form-control' name='categoryname'>";
     echo "<option value=''>Selecionar</option>";
         while ($row = mysqli_fetch_array($result)) {

@@ -19,21 +19,21 @@ $total = mysqli_num_rows($dados);
 
 <?php if ($db) : ?>
 
-    <div class="row">
+
         <table width="100%" class="table table-hover table-striped table-bordered table-condensed" bgcolor="#FFFFFF">
             <thead>
             <tr>
-                <th width="12%">Comando</th>
-                <th width="40%">Ação</th>
-                <th>Cooldown</th>
-                <th width="15%">Preço</th>
+                <th width="10%">Comando</th>
+                <th width="70%">Ação</th>
+                <th width="10">Cooldown</th>
+                <th width="10%">Preço</th>
             </tr>
             </thead>
             <?php
             do {
                 ?>
                 <tr>
-                    <td colspan="4" align="center" style="padding:3px; background-color:#CFCFCF;">
+                    <td colspan="4" align="center" style="padding:3px; background-color:#e8e8e8;">
                         <strong><?=$cat->categoryname;?></strong></td>
                 </tr>
                 <?php
@@ -47,9 +47,9 @@ $total = mysqli_num_rows($dados);
                         <td><?php if ($item->example != null) {
                             echo $item->action." - <abbr title='". $item->example."'>Exemplo</abbr>";
                         } else {
-                            echo $item->action;
+                            echo $item->action != null ? $item->action : "Sem ações";
                         }?></td>
-                        <td><?=$item->cooldown;?> minutos</td>
+                        <td><?php echo ($item->cooldown == 0 ? "Sem cooldown" : $item->cooldown.' minutos</td>');?>
                         <td><?php
                         if ($item->price == 0) {
                             echo "<span class=\"label label-success\">GR&Aacute;TIS</span>";
@@ -74,7 +74,7 @@ $total = mysqli_num_rows($dados);
 
         </div>
 
-    </div>
+
 
 
 

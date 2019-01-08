@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>lolrpwnz</title>
+    <title><?php echo WEBSITE_NAME ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="<?php echo BASEURL; ?>/assets/favicon.ico" type="image/x-icon"/>
@@ -34,9 +34,9 @@
                 <span class="icon-bar"></span>
             </button>
             <?php if (isset($_SESSION)) {
-            echo'<a href="'.BASEURL.'index.php" class="navbar-brand">LOLRPWNZ</a>';
+            echo'<a href="'.BASEURL.'index.php" class="navbar-brand">'.strtoupper(WEBSITE_NAME).'</a>';
             } else {
-            echo'<a href="'.BASEURL.'pages/home.php" class="navbar-brand">LOLRPWNZ</a>';
+            echo'<a href="'.BASEURL.'pages/home.php" class="navbar-brand">'.strtoupper(WEBSITE_NAME).'</a>';
             }?>
         </div>
         <div id="navbar" class="navbar-collapse collapse">

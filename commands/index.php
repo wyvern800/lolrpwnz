@@ -85,9 +85,9 @@ index();
                     <td>
                         <?php
                         if ($command['example'] != null) {
-                            echo $command['action']." - <abbr title='". $command['example']."'>Exemplo</abbr>";
+                            echo $command['action'] != null ? $command['action'] : "Sem ações"." - <abbr title='". $command['example']."'>Exemplo</abbr>";
                         } else {
-                            echo $command['action'];
+                            echo $command['action'] != null ? $command['action'] : "Sem ações";
                         }
                         ?>
                     </td>
