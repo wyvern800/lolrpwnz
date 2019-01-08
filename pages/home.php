@@ -10,32 +10,52 @@
 
 <?php if ($db) : ?>
 
-    <div class="row">
-        <div class="col-xs-6 col-sm-3 col-md-2">
-            <a href="users/add.php" class="btn btn-primary">
-                <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <i class="fa fa-plus fa-5x"></i>
-                    </div>
-                    <div class="col-xs-12 text-center">
-                        <p>Novo Usuário</p>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Seja bem vindo &agrave minha p&aacutegina!</h3>
+        </div>
+        <div class="panel-body">
+            <p>Esse site foi criado para facilitar a vida dos meus viewers e tamb&eacutem a minha.
+            Sou webdesigner nas horas vagas e streamer por amor, e esse foi o motivo de eu faz&ecirc-la.
+            Aqui v&atildeo algumas fotos dos meus melhores momentos nas streams.
+            Sim, isso &eacute s&oacute para ter um conte&uacutedo at&eacute eu terminar a p&aacutegina haha! <3 </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="../assets/live10h.png" target="_blank">
+                            <img src="../assets/live10h.png" alt="Live 10 horas comemoração 2k" style="width:100%">
+                            <div class="caption">
+                                <p>Primeira live de 10 horas do canal! pelos 2000 seguidores.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </a>
-        </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="../assets/live14h.png" target="_blank">
+                            <img src="../assets/live14h.png" alt="Live 14 horas" style="width:100%">
+                            <div class="caption">
+                                <p>Live de 14 horas, satisfa&ccedil&atildeo, foram muitos viewers!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="../assets/overlay.png" target="_blank">
+                            <img src="../assets/overlay.png" alt="Overlay nova do canal" style="width:100%">
+                            <div class="caption">
+                                <p>Nova overlay do canal funcionando! E eu feliz pra caramba jogando friday pela primeira vez.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </br>
 
-        <div class="col-xs-6 col-sm-3 col-md-2">
-            <a href="users" class="btn btn-default">
-                <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <i class="fa fa-user fa-5x"></i>
-                    </div>
-                    <div class="col-xs-12 text-center">
-                        <p>Usuários</p>
-                    </div>
-                </div>
-            </a>
         </div>
+            <div class="panel-footer"> </div>
+
     </div>
 
 
