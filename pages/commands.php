@@ -33,11 +33,11 @@ $total = mysqli_num_rows($dados);
             do {
                 ?>
                 <tr>
-                    <td colspan="4" align="center" style="padding:7px; background-color:#CFCFCF;">
+                    <td colspan="4" align="center" style="padding:3px; background-color:#CFCFCF;">
                         <strong><?=$cat->categoryname;?></strong></td>
                 </tr>
                 <?php
-                $query_item = sprintf("SELECT * FROM commands WHERE category = ".$cat->id);
+                $query_item = sprintf("SELECT * FROM commands WHERE category = ".$cat->id. " ORDER BY price");
                 $dados_item = mysqli_query($con, $query_item) or die(mysqli_error($con));
                 $item = mysqli_fetch_object($dados_item);
                 do {
@@ -57,7 +57,7 @@ $total = mysqli_num_rows($dados);
                             echo "<abbr class=\"label label-default\">". $item->price ." <abbr title='Teta Points (Pontos utilizados para gastar na live'><span class=\"glyphicon glyphicon-star\"></span></abbr>";
                         } else if ($item->price <= 350) {
                             echo "<abbr class=\"label label-warning\">". $item->price ." <abbr title='Teta Points (Pontos utilizados para gastar na live'><span class=\"glyphicon glyphicon-star\"></span></abbr>";
-                        } else if ($item->price['price'] >= 350) {
+                        } else if ($item->price >= 350) {
                             echo "<abbr class=\"label label-danger\">". $item->price ." <abbr title='Teta Points (Pontos utilizados para gastar na live'><span class=\"glyphicon glyphicon-star\"></span></abbr>";
                         }
                         ?></td>
@@ -65,6 +65,12 @@ $total = mysqli_num_rows($dados);
                 <?php } while($item = mysqli_fetch_object($dados_item)); ?>
             <?php } while($cat = mysqli_fetch_object($dados)); ?>
         </table>
+        <div class="panel panel-danger">
+            <div class="panel-heading"><h5>Legenda dos Preços</h5></p></div>
+            <div class="panel-body">
+                <p><span class="label label-success">GRÁTIS</span> <span class="label label-default">Barato</span> <span class="label label-warning">Caro</span> <span class="label label-danger">Muito Caro</span></p>
+            </div>
+        </div>
 
         </div>
 
