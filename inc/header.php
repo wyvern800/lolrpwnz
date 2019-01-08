@@ -33,7 +33,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="<?php echo BASEURL; ?>pages/home.php" class="navbar-brand">LOLRPWNZ</a>
+            <?php if (isset($_SESSION)) {
+            echo'<a href="'.BASEURL.'index.php" class="navbar-brand">LOLRPWNZ</a>';
+            } else {
+            echo'<a href="'.BASEURL.'pages/home.php" class="navbar-brand">LOLRPWNZ</a>';
+            }?>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <?php if (isset($_SESSION)) {
