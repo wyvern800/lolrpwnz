@@ -22,32 +22,26 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <a href="../assets/live10h.png" target="_blank">
                             <img src="../assets/live10h.png" alt="Live 10 horas comemoração 2k" style="width:100%">
                             <div class="caption">
                                 <p>Primeira live de 10 horas do canal! pelos 2000 seguidores.</p>
                             </div>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <a href="../assets/live14h.png" target="_blank">
                             <img src="../assets/live14h.png" alt="Live 14 horas" style="width:100%">
                             <div class="caption">
                                 <p>Live de 14 horas, satisfa&ccedil&atildeo, foram muitos viewers!</p>
                             </div>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <a href="../assets/overlay.png" target="_blank">
                             <img src="../assets/overlay.png" alt="Overlay nova do canal" style="width:100%">
                             <div class="caption">
                                 <p>Nova overlay do canal funcionando! E eu feliz pra caramba jogando friday pela primeira vez.</p>
                             </div>
-                        </a>
                     </div>
                 </div>
             </div>

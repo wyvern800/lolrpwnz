@@ -19,10 +19,9 @@ $total = mysqli_num_rows($dados);
 
 <?php if ($db) : ?>
 
-
         <table width="100%" class="table table-hover table-striped table-bordered table-condensed" bgcolor="#FFFFFF">
             <thead>
-            <tr>
+            <tr class="trcomandos">
                 <th width="10%">Comando</th>
                 <th width="70%">Ação</th>
                 <th width="10">Cooldown</th>
@@ -33,7 +32,7 @@ $total = mysqli_num_rows($dados);
             do {
                 ?>
                 <tr>
-                    <td colspan="4" align="center" style="padding:3px; background-color:#e8e8e8;">
+                    <td colspan="4" align="center" style="padding:0px; background-color:#e8e8e8;">
                         <strong><?=$cat->categoryname;?></strong></td>
                 </tr>
                 <?php
@@ -73,10 +72,6 @@ $total = mysqli_num_rows($dados);
         </div>
 
         </div>
-
-
-
-
 
 <?php else : ?>
     <div class="alert alert-danger" role="alert">

@@ -27,9 +27,9 @@
                     <div class="panel-body">
                         </br>
                         <p> <ul class="list-group">
-                            <li class="list-group-item list-group-item"><b>Qual o seu nome?</b> </br> Matheus Guilherme Ferreira</li>
+                            <div class="well well-sm"><b>Qual o seu nome?</b> </br> Matheus Guilherme Ferreira</div>
                             </br>
-                            <li class="list-group-item list-group-item"><b>Quantos anos voc&ecirc tem?</b> </br> 20</li>
+                            <li class="list-group-item list-group-item"><b>Quantos anos voc&ecirc tem?</b> </br> 22</li>
                             </br>
                             <li class="list-group-item list-group-item"><b>Voc&ecirc namora?</b> </br> N&atildeo, e t&ocirc suave...</li>
                             </br>
