@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ade708c-8971-4777-bc2b-364801940c48" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/category/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/category/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/category/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/category/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/category/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/commands/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/commands/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/commands/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/commands/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/login/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logout/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/news/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/news/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/news/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/news/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/commands.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/commands.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/users/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/users/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/users/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/users/view.php" afterDir="false" />
-    </list>
+    <list default="true" id="1ade708c-8971-4777-bc2b-364801940c48" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +39,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            <state relative-caret-position="170">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -185,15 +160,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546950629958</updated>
-      <workItem from="1546950631199" duration="5925000" />
+      <workItem from="1546950631199" duration="6589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5925000" />
+    <option name="totallyTimeSpent" value="6589000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
@@ -413,8 +388,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        <state relative-caret-position="170">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
         </state>
       </provider>
     </entry>
