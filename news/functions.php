@@ -3,31 +3,29 @@
 require_once('../config.php');
 require_once(DBAPI);
 
-$news = null;
-$news = null;
+$categories = null;
+$categories = null;
 
 /**
  *  Listagem de Clientes
  */
 function index() {
-    global $news;
-    $news = find_all('news');
+    global $categories;
+    $categories = find_all('categories');
 }
 
 
 
 function add() {
-    if (!empty($_POST['new'])) {
+    if (!empty($_POST['category'])) {
 
         $today =
             date_create('now', new DateTimeZone('America/Sao_Paulo'));
 
-        $new= $_POST['new'];
-        $new['author'] = $_SESSION['UserName'];
-        $new['status'] = 1;
-        $new['modified'] = $new['created'] = $today->format("Y-m-d H:i:s");
+        $category= $_POST['category'];
+        $category['status'] = 1;
 
-        save('news', $new);
+        save('categories', $category);
         header('location: index.php');
     }
 }
@@ -43,16 +41,16 @@ function edit() {
 
         $id = $_GET['id'];
 
-        if (isset($_POST['new'])) {
+        if (isset($_POST['category'])) {
 
-            $new = $_POST['new'];
+            $category = $_POST['category'];
 
-            update('new', $id, $new);
+            update('category', $id, $category);
             header('location: index.php');
         } else {
 
-            global $new;
-            $new= find('news', $id);
+            global $category;
+            $category= find('categories', $id);
         }
     } else {
         header('location: index.php');
@@ -63,8 +61,8 @@ function edit() {
  *  Visualização de um Cliente
  */
 function view($id = null) {
-    global $new;
-    $new = find('news', $id);
+    global $category;
+    $category = find('categories', $id);
 }
 
 /**
@@ -72,8 +70,8 @@ function view($id = null) {
  */
 function delete($id = null) {
 
-    global $new;
-    $new = remove('news', $id);
+    global $category;
+    $category = remove('categories', $id);
 
     header('location: index.php');
 }
