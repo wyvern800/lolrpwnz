@@ -61,6 +61,17 @@
                     </ul>
                 </li>
             </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-font" aria-hidden="true"></span> Notícias <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo BASEURL; ?>news"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Gerenciar Notícias</a></li>
+                        <li><a href="<?php echo BASEURL; ?>news/add.php"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar Notícias</a></li>
+                    </ul>
+                </li>
+            </ul>
             <!-- botoes de logar -->
             <ul class="nav navbar-nav navbar-right">
                 <?php
