@@ -1,5 +1,6 @@
 <?php require_once '../config.php'; ?>
 <?php require_once DBAPI; ?>
+<?php require_once('functions.php'); ?>
     <title><?php echo WEBSITE_NAME?> - Home</title>
 <?php include(HEADER_TEMPLATE); ?>
 

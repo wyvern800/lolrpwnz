@@ -1,5 +1,6 @@
 <?php require_once '../config.php'; ?>
 <?php require_once DBAPI; ?>
+<?php require_once('functions.php'); ?>
 
     <title><?php echo WEBSITE_NAME?> - Comandos</title>
 <?php include(HEADER_TEMPLATE); ?>
@@ -12,7 +13,7 @@
 
     <div class="row">
         <div class="col-xs-6 col-sm-3 col-md-2">
-            <a href="users/add.php" class="btn btn-primary">
+            <!--<a href="users/add.php" class="btn btn-primary">
                 <div class="row">
                     <div class="col-xs-12 text-center">
                         <i class="fa fa-plus fa-5x"></i>
@@ -21,7 +22,8 @@
                         <p>Novo Usuário</p>
                     </div>
                 </div>
-            </a>
+            </a> -->
+            <?php show_commands(); ?>
         </div>
 
         <div class="col-xs-6 col-sm-3 col-md-2">
