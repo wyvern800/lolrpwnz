@@ -55,7 +55,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="<?php echo BASEURL; ?>commands"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Gerenciar Comandos</a></li>
                         <li><a href="<?php echo BASEURL; ?>commands/add.php"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar Comando</a></li>
-                        <hr>
+                        <li role="separator" class="divider"></li>
                         <li><a href="<?php echo BASEURL; ?>category"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Gerenciar Categorias</a></li>
                         <li><a href="<?php echo BASEURL; ?>category/add.php"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar Categoria</a></li>
                     </ul>

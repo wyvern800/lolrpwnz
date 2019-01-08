@@ -6,7 +6,7 @@ view($_GET['id']);
 
 <?php include(HEADER_TEMPLATE); ?>
 
-    <h2>Categoria <?php echo $category['id']; ?></h2>
+    <h2>Título <?php echo $new['id']; ?></h2>
     <hr>
 
 <?php if (!empty($_SESSION['message'])) : ?>
@@ -14,17 +14,21 @@ view($_GET['id']);
 <?php endif; ?>
 
     <dl class="dl-horizontal">
-        <dt>Categoria</dt>
-        <dd><b><?php echo strtoupper($category['categoryname']); ?></b>
+        <dt>Título</dt>
+        <dd><b><?php echo $new['title']; ?></b>
+        </dd>
+
+        <dt>Descrição</dt>
+        <dd><?php echo $new['description']; ?>
         </dd>
 
         <dt>Status:</dt>
-        <dd><?php echo $category['status']; ?></dd>
+        <dd><?php echo $new['status'] = 1 ? 'Ativo' : 'Inativo'; ?></dd>
     </dl>
 
     <div id="actions" class="row">
         <div class="col-md-12">
-            <a href="edit.php?id=<?php echo $category['id']; ?>" class="btn btn-primary">Editar</a>
+            <a href="edit.php?id=<?php echo $new['id']; ?>" class="btn btn-primary">Editar</a>
             <a href="index.php" class="btn btn-default">Voltar</a>
         </div>
     </div>

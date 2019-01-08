@@ -18,11 +18,13 @@ $today =
                 <label for="campo2">Título</label>
                 <input type="text" class="form-control" name="new['title']">
             </div>
+        </div>
+        <div class="row">
             <div class="form-group col-md-2">
                 <label for="campo3">Descrição</label>
-                <input type="text" class="form-control" name="new['description']">
+                <textarea class="form-control" rows="5" name="new['description']"></textarea>
             </div>
-
+        </div>
         <div id="actions" class="row">
             <div class="col-md-12">
                 <button type="submit" class="btn btn-primary">Adicionar</button>
