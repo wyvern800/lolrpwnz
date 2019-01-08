@@ -19,6 +19,10 @@ if ( !defined('ABSPATH') )
 if ( !defined('BASEURL') )
     define('BASEURL', '/lolrpwnz/');
 
+if( !defined('WEBSITE_NAME')) {
+    define('WEBSITE_NAME', 'lolrpwnz');
+}
+
 /** caminho do arquivo de banco de dados **/
 if ( !defined('DBAPI') )
     define('DBAPI', ABSPATH . 'inc/database.php');

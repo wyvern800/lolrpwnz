@@ -1,5 +1,5 @@
 <?php require_once '../config.php'; ?>
-
+<title>lolrpwnz - Login</title>
 <?php include(HEADER_TEMPLATE); ?>
 <h1><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Área Restrita</h1>
 <hr />

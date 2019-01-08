@@ -3,7 +3,7 @@ require_once('functions.php');
 restrict_and_redirect_to('login/index.php');
 view($_GET['id']);
 ?>
-
+    <title><?php echo WEBSITE_NAME?> - Notícia: <?php echo $new['id']; ?></title>
 <?php include(HEADER_TEMPLATE); ?>
 
     <h2>Título <?php echo $new['id']; ?></h2>

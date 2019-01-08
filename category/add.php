@@ -5,7 +5,7 @@ add();
 $today =
     date_create('now', new DateTimeZone('America/Sao_Paulo'));
 ?>
-
+    <title><?php echo WEBSITE_NAME?> - Adicionar Categoria</title>
 <?php include(HEADER_TEMPLATE); ?>
 
     <h2>Nova Categoria</h2>

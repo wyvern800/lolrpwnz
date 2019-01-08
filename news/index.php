@@ -3,7 +3,7 @@ require_once('functions.php');
 restrict_and_redirect_to('login/index.php');
 index();
 ?>
-
+<title><?php echo WEBSITE_NAME?> - Notícias</title>
 <?php include(HEADER_TEMPLATE); ?>
     <header>
         <!--<div class="row">

@@ -1,5 +1,5 @@
 <?php
 session_start(); // Inicia a sessão
 session_destroy(); // Destrói a sessão limpando todos os valores salvos
-header("Location: ../login/index.php"); exit; // Redireciona o visitante
+header("Location: ../pages/home.php"); exit; // Redireciona o visitante
 ?>

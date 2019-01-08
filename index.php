@@ -1,7 +1,7 @@
 <?php require_once 'config.php'; ?>
 <?php restrict_and_redirect_to('login/index.php'); ?>
 <?php require_once DBAPI; ?>
-
+    <title><?php echo WEBSITE_NAME?> - Dashboard</title>
 <?php include(HEADER_TEMPLATE); ?>
 <?php $db = open_database(); ?>
 

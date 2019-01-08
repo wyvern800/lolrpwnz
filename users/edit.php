@@ -3,7 +3,7 @@ require_once('functions.php');
 restrict_and_redirect_to('login/index.php');
 edit();
 ?>
-
+    <title><?php echo WEBSITE_NAME?> - Atualizar Usuários</title>
 <?php include(HEADER_TEMPLATE); ?>
 
     <h2>Atualizar Usuário</h2>

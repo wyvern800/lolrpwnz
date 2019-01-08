@@ -1,6 +1,7 @@
 <?php require_once '../config.php'; ?>
 <?php require_once DBAPI; ?>
 
+    <title><?php echo WEBSITE_NAME?> - Sobre</title>
 <?php include(HEADER_TEMPLATE); ?>
 <?php $db = open_database(); ?>
 

@@ -1,7 +1,8 @@
 <?php require_once '../config.php'; ?>
 <?php require_once DBAPI; ?>
-
+    <title><?php echo WEBSITE_NAME?> - Home</title>
 <?php include(HEADER_TEMPLATE); ?>
+
 <?php $db = open_database(); ?>
 
     <h1><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</h1>

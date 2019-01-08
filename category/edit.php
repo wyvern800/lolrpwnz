@@ -3,7 +3,7 @@ require_once('functions.php');
 restrict_and_redirect_to('login/index.php');
 edit();
 ?>
-
+    <title><?php echo WEBSITE_NAME?> - Atualizar Categoria <?php echo $category['id']; ?></title>
 <?php include(HEADER_TEMPLATE); ?>
 
     <h2>Atualizar Categoria</h2>
