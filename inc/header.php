@@ -33,9 +33,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">LOLRPWNZ</a>
+            <a href="<?php echo BASEURL; ?>pages/home.php" class="navbar-brand">LOLRPWNZ</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
+            <?php if (isset($_SESSION)) {
+                echo ' 
             <ul class="nav navbar-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -47,31 +49,57 @@
                     </ul>
                 </li>
             </ul>
+            ';
+            } else {
+            echo '
             <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-console" aria-hidden="true"></span> Comandos <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="<?php echo BASEURL; ?>commands"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Gerenciar Comandos</a></li>
-                        <li><a href="<?php echo BASEURL; ?>commands/add.php"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar Comando</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="<?php echo BASEURL; ?>category"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Gerenciar Categorias</a></li>
-                        <li><a href="<?php echo BASEURL; ?>category/add.php"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar Categoria</a></li>
-                    </ul>
-                </li>
+            <li><a href="'.BASEURL.'pages/home.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
             </ul>
+             ';
+            }?>
+            <?php if (isset($_SESSION)) {
+            echo' 
+            <ul class="nav navbar-nav">
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-console" aria-hidden="true"></span> Comandos <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="'.BASEURL.'commands"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Gerenciar Comandos</a></li>
+            <li><a href="'.BASEURL.'commands/add.php"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar Comando</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="'.BASEURL.'category"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Gerenciar Categorias</a></li>
+            <li><a href="'.BASEURL.'category/add.php"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar Categoria</a></li>';
+            } else {
+            echo '       
+            <ul class="nav navbar-nav">
+            <li><a href="'.BASEURL.'pages/commands.php"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> Comandos <span class="sr-only">(current)</span></a></li>
+            </ul>';
+            }
+            echo'
+            </ul>
+            </li>
+            </ul>';
+            ?>
+            <?php if (isset($_SESSION)) {
+            echo' 
             <ul class="nav navbar-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="glyphicon glyphicon-font" aria-hidden="true"></span> Notícias <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="<?php echo BASEURL; ?>news"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Gerenciar Notícias</a></li>
-                        <li><a href="<?php echo BASEURL; ?>news/add.php"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar Notícias</a></li>
+                        <li><a href="'.BASEURL.'news"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Gerenciar Notícias</a></li>
+                        <li><a href="'.BASEURL.'news/add.php"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar Notícias</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul>';
+            } else {
+            echo '       
+            <ul class="nav navbar-nav">
+            <li><a href="'.BASEURL.'pages/about.php"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Sobre <span class="sr-only">(current)</span></a></li>
+            </ul>';
+            }?>
             <!-- botoes de logar -->
             <ul class="nav navbar-nav navbar-right">
                 <?php
