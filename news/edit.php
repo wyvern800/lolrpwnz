@@ -20,7 +20,7 @@ edit();
         <div class="row">
             <div class="form-group col-md-3">
                 <label for="campo2">Descrição</label>
-                <textarea class="form-control" rows="5" name="new['description']" value="<?php echo $new['description']; ?>"></textarea>
+                <textarea class="form-control" rows="5" cols="50" id ="new['description']" name="new['description']" value="<?php echo processText($new['description']); ?>"></textarea>
             </div>
 
         </div>

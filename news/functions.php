@@ -15,6 +15,13 @@ function index() {
 }
 
 
+function processText($text) {
+    $text = strip_tags($text);
+    $text = trim($text);
+    $text = htmlspecialchars($text);
+    return $text;
+}
+
 
 function add() {
     if (!empty($_POST['new'])) {
@@ -23,6 +30,7 @@ function add() {
             date_create('now', new DateTimeZone('America/Sao_Paulo'));
 
         $new= $_POST['new'];
+        $new['description'] = $_POST['description'];
         $new['author'] = $_SESSION['UserName'];
         $new['status'] = 1;
         $new['modified'] = $new['created'] = $today->format("Y-m-d H:i:s");
@@ -46,6 +54,8 @@ function edit() {
         if (isset($_POST['new'])) {
 
             $new = $_POST['new'];
+            $new['description'] = $_POST['description'];
+            $new['modified'] = $now->format("Y-m-d H:i:s");
 
             update('new', $id, $new);
             header('location: index.php');

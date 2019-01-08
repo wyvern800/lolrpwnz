@@ -22,7 +22,7 @@ $today =
         <div class="row">
             <div class="form-group col-md-2">
                 <label for="campo3">Descrição</label>
-                <textarea class="form-control" rows="5" name="new['description']"></textarea>
+                <textarea class="form-control" rows="5" cols="50" name="new['description']" id="new['description']"></textarea>
             </div>
         </div>
         <div id="actions" class="row">
