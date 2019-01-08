@@ -1,9 +1,9 @@
 # lolrpwnz
 Website de noticias focada no game League of Legends e ainda servirá de portfolio para meu canal de livestreams na twitch
-onde houverá uma página de listagem dos comandos funcionais da minha livestream (sem API).
+onde houverá uma página de listagem dos comandos funcionais da minha livestream (**sem API**).
 
 ## O que há no site atualmente
-* CRUD.
+*  **CRUD**.
 * Sistema de login com encryption MD5 (Pode ser melhorada).
 * Cadastro de usuários com roles.
 * Cadastro de comandos com categorias.
@@ -14,3 +14,4 @@ ajudar, eu agradeço...
 # O que quero pro futuro?
 * Sistema de notícias (Próximo).
 * Sistema de paginamento.
+* Algo que use API do lol.
