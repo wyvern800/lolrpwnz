@@ -4,7 +4,7 @@
 <?php include(HEADER_TEMPLATE); ?>
 <?php $db = open_database(); ?>
 
-    <h1><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> Dashboard</h1>
+    <h1><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> Comandos</h1>
     <hr />
 
 <?php if ($db) : ?>
