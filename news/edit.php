@@ -6,14 +6,19 @@ edit();
 
 <?php include(HEADER_TEMPLATE); ?>
 
-    <h2>Atualizar Categoria</h2>
+    <h2>Atualizar Notícia</h2>
 
-    <form action="edit.php?id=<?php echo $category['id']; ?>" method="post">
+    <form action="edit.php?id=<?php echo $new['id']; ?>" method="post">
         <hr />
         <div class="row">
             <div class="form-group col-md-3">
-                <label for="campo2">Nome da Categoria</label>
-                <input type="text" class="form-control" name="category['categoryname']" value="<?php echo $category['categoryname']; ?>">
+                <label for="campo2">Título</label>
+                <input type="text" class="form-control" name="news['title']" value="<?php echo $new['title']; ?>">
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="campo2">Descrição</label>
+                <input type="text" class="form-control" name="news['description']" value="<?php echo $new['description']; ?>">
             </div>
 
         </div>

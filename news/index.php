@@ -18,12 +18,12 @@ index();
         </div>-->
         <div id="top" class="row">
             <div class="col-md-3">
-                <h2><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> Categorias</h2>
+                <h2><span class="glyphicon glyphicon-font" aria-hidden="true"></span> Notícias</h2>
             </div>
 
             <div class="col-md-6">
                 <div class="input-group h2">
-                    <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Categorias">
+                    <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Noticias">
                     <span class="input-group-btn">
                 <button class="btn btn-primary" type="submit">
                     <span class="glyphicon glyphicon-search"></span>
@@ -34,7 +34,7 @@ index();
 
             <div class="col-md-3">
                 <a class="btn btn-default pull-right h2" href="index.php"><i class="fa fa-refresh"></i> Atualizar</a>
-                <a class="btn btn-primary pull-right h2" href="add.php"><i class="fa fa-plus"></i> Nova Categoria</a>
+                <a class="btn btn-primary pull-right h2" href="add.php"><i class="fa fa-plus"></i> Nova Notícia</a>
             </div>
         </div> <!-- /#top -->
     </header>
@@ -53,19 +53,19 @@ index();
         <thead>
         <tr>
             <th width="5%">ID</th>
-            <th width="60%">Nome da Categoria</th>
+            <th width="60%">Título</th>
             <th width="5%">Status</th>
             <th width="30%">Ações</th>
         </tr>
         </thead>
         <tbody>
-        <?php if ($categories) : ?>
-            <?php foreach ($categories as $category) : ?>
+        <?php if ($news) : ?>
+            <?php foreach ($news as $new) : ?>
                 <tr>
-                    <td><?php echo $category['id']; ?></td>
-                    <td><?php echo $category['categoryname']; ?></td>
+                    <td><?php echo $new['id']; ?></td>
+                    <td><?php echo $new['title']; ?></td>
                     <td><?php
-                        if ($category['status'] == 1) {
+                        if ($new['status'] == 1) {
                             echo "<center><span class='glyphicon glyphicon-ok' aria-hidden='true'></center></span>";
                         } else {
                             echo "<center><span class='glyphicon glyphicon-remove' aria-hidden='true'></center></span>";
@@ -74,9 +74,9 @@ index();
 
                    <!-- voltar linha aq -->
                     <td class="actions text-right">
-                        <a href="view.php?id=<?php echo $category['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
-                        <a href="edit.php?id=<?php echo $category['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-                        <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $category['id']; ?>">
+                        <a href="view.php?id=<?php echo $new['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
+                        <a href="edit.php?id=<?php echo $new['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
+                        <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $new['id']; ?>">
                             <i class="fa fa-trash"></i> Excluir
                         </a>
                     </td>
