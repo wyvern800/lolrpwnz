@@ -22,7 +22,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="panel panel-info">
+                <div class="panel panel-default">
                     <div class="panel-heading">Esse question&aacuterio tem a fun&ccedil&atildeo de auto-responder as quest&otildees mais perguntadas por voc&ecircs para facilitar a vida de todos n&oacutes!</div>
                     <div class="panel-body">
                         <p>

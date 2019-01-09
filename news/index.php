@@ -52,32 +52,23 @@ index();
     <table class="table table-hover table-striped table-bordered table-condensed">
         <thead>
         <tr>
-            <th width="5%">ID</th>
-            <th width="60%">Title</th>
-            <th width="5%">Status</th>
-            <th width="30%">Ações</th>
+            <th width="4%" style="text-align:center;vertical-align:middle">ID</th>
+            <th width="65%" style="text-align:center;vertical-align:middle">Título</th>
+            <th width="10%" style="text-align:center;vertical-align:middle">Ações</th>
         </tr>
         </thead>
         <tbody>
         <?php if ($news) : ?>
             <?php foreach ($news as $new) : ?>
                 <tr>
-                    <td><?php echo $new['id']; ?></td>
-                    <td><?php echo $new['title']; ?></td>
-                    <td><?php
-                        if ($new['status'] == 1) {
-                            echo "<center><span class='glyphicon glyphicon-ok' aria-hidden='true'></center></span>";
-                        } else {
-                            echo "<center><span class='glyphicon glyphicon-remove' aria-hidden='true'></center></span>";
-                        }?>
-                    </td>
-
+                    <td style="text-align:center;vertical-align:middle";><?php echo $new['id']; ?></td>
+                    <td style="vertical-align:middle";><?php echo $new['title']; ?></td>
                    <!-- voltar linha aq -->
-                    <td class="actions text-right">
-                        <a href="view.php?id=<?php echo $new['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
-                        <a href="edit.php?id=<?php echo $new['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-                        <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $new['id']; ?>">
-                            <i class="fa fa-trash"></i> Excluir
+                    <td class="actions text-right" style="text-align:center;vertical-align:middle";>
+                        <a href="view.php?id=<?php echo $new['id']; ?>" class="btn btn btn-success"><i class="fa fa-eye"></i></a>
+                        <a href="edit.php?id=<?php echo $new['id']; ?>" class="btn btn btn-warning"><i class="fa fa-pencil"></i></a>
+                        <a href="#" class="btn btn btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $new['id']; ?>">
+                            <i class="fa fa-trash"></i>
                         </a>
                     </td>
                 </tr>

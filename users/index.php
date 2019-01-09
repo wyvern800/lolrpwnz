@@ -52,11 +52,11 @@ index();
     <table class="table table-hover table-striped table-bordered table-condensed" >
         <thead>
         <tr>
-            <th>ID</th>
-            <th width="30%">Username</th>
-            <th>Nome Completo</th>
-            <th>Data de Modificação</th>
-            <th>Opções</th>
+            <th width="3%" style="text-align:center;vertical-align:middle";>ID</th>
+            <th width="10%" style="text-align:center;vertical-align:middle";>Username</th>
+            <th width="30%" style="text-align:center;vertical-align:middle";>Nome Completo</th>
+            <th width="10%" style="text-align:center;vertical-align:middle";>Data de Modificação</th>
+            <th width="8%" style="text-align:center;vertical-align:middle";>Opções</th>
         </tr>
         </thead>
         <tbody>
@@ -65,13 +65,13 @@ index();
                 <tr>
                     <td style="text-align:center;vertical-align:middle";><?php echo $user['id']; ?></td>
                     <td style="vertical-align:middle";><?php echo $user['username']; ?></td>
-                    <td><?php echo $user['realname']; ?></td>
+                    <td style="vertical-align:middle";><?php echo $user['realname']; ?></td>
                     <td style="text-align:center;vertical-align:middle";><?php echo $user['modified']; ?></td>
                     <td class="actions text-right" style="text-align:center;vertical-align:middle";>
-                        <a href="view.php?id=<?php echo $user['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
-                        <a href="edit.php?id=<?php echo $user['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-                        <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $user['id']; ?>">
-                            <i class="fa fa-trash"></i> Excluir
+                        <a href="view.php?id=<?php echo $user['id']; ?>" class="btn btn btn-success"><i class="fa fa-eye"></i></a>
+                        <a href="edit.php?id=<?php echo $user['id']; ?>" class="btn btn btn-warning"><i class="fa fa-pencil"></i></a>
+                        <a href="#" class="btn btn btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $user['id']; ?>">
+                            <i class="fa fa-trash"></i>
                         </a>
                     </td>
                 </tr>

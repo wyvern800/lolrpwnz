@@ -52,12 +52,12 @@ index();
     <table class="table table-hover table-striped table-bordered table-condensed">
         <thead>
         <tr>
-            <th>ID</th>
-            <th width="12%">Comando</th>
-            <th width="45%">Ação</th>
-            <th>Cooldown</th>
-            <th width="7%">Preço</th>
-            <th>Ações</th>
+            <th style="text-align:center;vertical-align:middle";>ID</th>
+            <th width="12%" style="text-align:center;vertical-align:middle";>Comando</th>
+            <th width="55%" style="text-align:center;vertical-align:middle";>Ação</th>
+            <th style="text-align:center;vertical-align:middle";>Cooldown</th>
+            <th width="7%" style="text-align:center;vertical-align:middle";>Preço</th>
+            <th style="text-align:center;vertical-align:middle";>Ações</th>
         </tr>
         </thead>
         <tbody>
@@ -91,7 +91,7 @@ index();
                         }
                         ?>
                     </td>
-                    <td style="text-align:center;vertical-align:middle";><?php echo $command['cooldown']; ?> min</td>
+                    <td style="text-align:center;vertical-align:middle";><?php echo ($command['cooldown'] == 0 ? 'Sem' : $command['cooldown'].' min'); ?></td>
                     <td style="text-align:center;vertical-align:middle";>
                     <?php
                     if ($command['price'] == 0) {
@@ -108,10 +108,10 @@ index();
 
                    <!-- voltar linha aq -->
                     <td class="actions text-right" style="text-align:center;vertical-align:middle";>
-                        <a href="view.php?id=<?php echo $command['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
-                        <a href="edit.php?id=<?php echo $command['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-                        <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $command['id']; ?>">
-                            <i class="fa fa-trash"></i> Excluir
+                        <a href="view.php?id=<?php echo $command['id']; ?>" class="btn btn- btn-success"><i class="fa fa-eye"></i></a>
+                        <a href="edit.php?id=<?php echo $command['id']; ?>" class="btn btn btn-warning"><i class="fa fa-pencil"></i></a>
+                        <a href="#" class="btn btn btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $command['id']; ?>">
+                            <i class="fa fa-trash"></i>
                         </a>
                     </td>
                 </tr>

@@ -11,7 +11,7 @@
 
 <?php if ($db) : ?>
 
-    <div class="panel panel-info">
+    <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">Qual o intuito desse site?</h3>
         </div>
@@ -52,7 +52,7 @@
 
     </div>
 
-    <div class="panel panel-info">
+    <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">Assista a live!</h3>
         </div>
