@@ -1,9 +1,8 @@
-<?php require_once '../config.php'; ?>
 </main> <!-- /container -->
 
 <hr>
 <footer class="container">
-    <p align="center">&copy; 2018 • Matheus Guilherme Ferreira • v<?php echo SITE_VERSION ?></p>
+    <p align="center">&copy; 2018 • Matheus Guilherme Ferreira • v<?php echo SITE_VERSION; ?></p>
     <p align="center"><a href="https://twitch.tv/godzamy">Twitch</a> | <a href="https://github.com/wyvern800">Github</a> | <a href="https://fb.gg/godzamy">Facebook</a></p>
 </footer>
 

@@ -86,7 +86,7 @@ index();
 
 <!--bottom - Pagination -->
 <div id="bottom" class="row">
-    <div class="col-md-12">
+    <div class="col-md-12" align="center">
 
         <ul class="pagination">
             <li class="disabled"><a>&lt; Anterior</a></li>
