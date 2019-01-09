@@ -19,9 +19,9 @@
                             <img src="../assets/1.jpg" class="img-circle" width="120" height="120">
                             <img src="../assets/2.jpg" class="img-circle" width="120" height="120">
                             <img src="../assets/3.png" class="img-circle" width="120" height="120">
-                            <img src="../assets/4.png" class="img-circle" width="120" height="120">
-                            <img src="../assets/5.png" class="img-circle" width="120" height="120">
-                            <img src="../assets/6.png" class="img-circle" width="120" height="120">
+                            <img src="../assets/4.jpg" class="img-circle" width="120" height="120">
+                            <img src="../assets/5.jpg" class="img-circle" width="120" height="120">
+                            <img src="../assets/6.jpg" class="img-circle" width="120" height="120">
                         </p>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 <?php
 require_once('config.php');
-$senha = 'kkkk';
+$senha = 'patinete48';
 $hash = crypt($senha, MINI_SALT . SALT_COST . '$' . BIG_SALT . '$');
 ?>
 <!DOCTYPE html>
