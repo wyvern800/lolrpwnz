@@ -15,20 +15,6 @@ $today =
         <!-- area de campos do form -->
         <hr />
         <div class="row">
-            <div class="form-group col-md-2">
-                <label for="campo2">Nome de Usuário</label>
-                <input type="text" class="form-control" name="user['username']">
-            </div>
-
-            <div class="form-group col-md-2">
-                <label for="campo3">Senha</label>
-                <input type="password" class="form-control" name="user['password']">
-            </div>
-
-            <div class="form-group col-md-3">
-                <label for="campo1">Cargo</label>
-                <input type="int" class="form-control" name="user['role']" value="0">
-            </div>
 
             <div class="form-group col-md-7">
                 <label for="campo4">Nome Real</label>
@@ -61,7 +47,24 @@ $today =
         <div class="row">
             <div class="form-group col-md-3">
                 <label for="campo9">Celular</label>
-                <input type="number" class="form-control" id="CELL" name="user['mobile']">
+                <input type="number" class="form-control" id="user['mobile']" name="user['mobile']">
+            </div>
+        </div>
+<hr>
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label for="campo1">Cargo</label>
+                <input type="int" class="form-control" name="user['role']" value="0">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="campo2">Nome de Usuário</label>
+                <input type="text" class="form-control" name="user['username']">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="campo3">Senha</label>
+                <input type="password" class="form-control" name="user['password']">
             </div>
 
             <div class="form-group col-md-2">
@@ -73,7 +76,6 @@ $today =
                 <label for="campo10">Data de Modifica&ccedil;&atilde;o</label>
                 <input type="text" class="form-control" name="user['modified']" placeholder="<?php echo $today->format("Y-m-d H:i:s") ?>" disabled>
             </div>
-
         </div>
 
         <div id="actions" class="row">

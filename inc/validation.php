@@ -9,22 +9,25 @@ require_once(DBAPI);
  */
 
 // Verifica se houve POST e se o usuário ou a senha é(são) vazio(s)
-if (!empty($_POST) AND (empty($_POST['username']) OR empty($_POST['password']))) {
+if (!empty($_POST) AND (empty($_POST['username']) OR empty($_POST['password_normal']))) {
     header("Location: index.php"); exit;
 }
 $link = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-
 mysqli_select_db(mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME), 'users');
 
-$username = mysqli_real_escape_string($link, $_POST['username']);
-$password = mysqli_real_escape_string($link, $_POST['password']);
+$username = $_POST['username'];
+$password_normal = $_POST['password_normal'];
+
+$hash = crypt($password_normal, MINI_SALT . SALT_COST . '$' . BIG_SALT . '$');
 
 // Validação do usuário/senha digitados
-$sql = "SELECT id, username, role FROM users WHERE (username = '".$username ."') AND (password = '". MD5($password) ."') AND (active = 1) LIMIT 1";
+$sql = "SELECT id, username, role FROM users WHERE (username = '".$username ."') AND (password2 = '". $hash ."') AND (active = 1) LIMIT 1";
 $query = mysqli_query($link, $sql) or die(mysqli_error($link));
 if (mysqli_num_rows($query) != 1) {
     // Mensagem de erro quando os dados são inválidos e/ou o usuário não foi encontrado
-    echo "Login inválido ou usuário não encontrado!"; exit;
+    $_SESSION['message'] = "Login inválido ou usuário não encontrado.".$hash;
+    $_SESSION['type'] = 'danger';
+    echo $_SESSION['message']; exit;
 } else {
     // Salva os dados encontados na variável $resultado
     $resultado = mysqli_fetch_assoc($query);

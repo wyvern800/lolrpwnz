@@ -16,21 +16,18 @@ function index() {
 }
 
 function add() {
+
     if (!empty($_POST['user'])) {
+
 
         $today =
             date_create('now', new DateTimeZone('America/Sao_Paulo'));
 
 
         $user = $_POST['user'];
+        $encript = crypt($user['password'], MINI_SALT . SALT_COST . '$' . BIG_SALT . '$');
 
-        /*
-         * PROBLEMA DO MD5
-
-        $pw = $_POST['password'];
-        $user['password'] = md5($pw);
-        */
-
+        $user['password2'] = $encript;
 
         $user['modified'] = $user['created'] = $today->format("Y-m-d H:i:s");
         $user['active'] = 1;

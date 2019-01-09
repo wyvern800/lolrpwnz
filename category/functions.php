@@ -44,7 +44,6 @@ function edit() {
         if (isset($_POST['category'])) {
 
             $category = $_POST['category'];
-            $category['status'] = 1;
 
             update('category', $id, $category);
             header('location: index.php');

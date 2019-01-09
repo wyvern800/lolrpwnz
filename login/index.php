@@ -12,7 +12,7 @@
             </div>
             <div class="form-group">
                 <label for="txPass">Senha</label>
-                <input type="password" name="password" id="txPass" class="form-control" placeholder="Digite sua senha"/>
+                <input type="password" name="password_normal" id="txPass" class="form-control" placeholder="Digite sua senha"/>
             </div>
 
                 <input type="submit" value="Entrar" class="btn btn-default"/>
