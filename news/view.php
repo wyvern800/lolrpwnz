@@ -21,9 +21,6 @@ view($_GET['id']);
         <dt>Descrição</dt>
         <dd><?php echo $new['description']; ?>
         </dd>
-
-        <dt>Status:</dt>
-        <dd><?php echo $new['status'] = 1 ? 'Ativo' : 'Inativo'; ?></dd>
     </dl>
 
     <div id="actions" class="row">

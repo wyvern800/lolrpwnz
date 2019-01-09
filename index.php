@@ -29,7 +29,7 @@
                 <a href="commands" class="btn btn-default">
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <i class="fa fa-user fa-5x"></i>
+                            <i class="glyphicon glyphicon-console fa-5x"></i>
                         </div>
                         <div class="col-xs-12 text-center">
                             <p>Comandos</p>
@@ -42,10 +42,23 @@
                 <a href="news" class="btn btn-default">
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <i class="fa fa-user fa-5x"></i>
+                            <i class="glyphicon glyphicon-font fa-5x"></i>
                         </div>
                         <div class="col-xs-12 text-center">
                             <p>Notícias</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-2">
+                <a href="news" class="btn btn-default">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <i class="glyphicon glyphicon-tag fa-2x"></i>
+                        </div>
+                        <div class="col-xs-12 text-center">
+                            <p><br size="2%">Categorias</br>de Comandos</font></p>
                         </div>
                     </div>
                 </a>
