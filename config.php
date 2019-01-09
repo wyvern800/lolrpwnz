@@ -13,11 +13,11 @@ define('DB_HOST', 'localhost');
 
 /** BCRYPT */
 define('BIG_SALT', 'FcdPs1ePtXp41JomM0P4aJ');
-
 define('MINI_SALT', '$2a$');
-
 define('SALT_COST', '08');
 
+/** VERSÃO DO SITE */
+define('SITE_VERSION', '0.1');
 
 /** caminho absoluto para a pasta do sistema **/
 if ( !defined('ABSPATH') )

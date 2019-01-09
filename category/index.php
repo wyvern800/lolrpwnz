@@ -53,8 +53,7 @@ index();
         <thead>
         <tr>
             <th width="5%">ID</th>
-            <th width="60%">Nome da Categoria</th>
-            <th width="5%">Status</th>
+            <th width="65%">Nome da Categoria</th>
             <th width="30%">Ações</th>
         </tr>
         </thead>
@@ -64,13 +63,6 @@ index();
                 <tr>
                     <td><?php echo $category['id']; ?></td>
                     <td><?php echo $category['categoryname']; ?></td>
-                    <td><?php
-                        if ($category['status'] == 1) {
-                            echo "<center><span class='glyphicon glyphicon-ok' aria-hidden='true'></center></span>";
-                        } else {
-                            echo "<center><span class='glyphicon glyphicon-remove' aria-hidden='true'></center></span>";
-                        }?>
-                    </td>
 
                    <!-- voltar linha aq -->
                     <td class="actions text-right">

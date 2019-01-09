@@ -23,7 +23,6 @@ function add() {
             date_create('now', new DateTimeZone('America/Sao_Paulo'));
 
         $category= $_POST['category'];
-        $category['status'] = 1;
 
         save('categories', $category);
         header('location: index.php');
@@ -85,7 +84,7 @@ function select_category() {
     $con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
     # here database details
     mysqli_select_db($con, DB_NAME);
-    $result = mysqli_query($con, 'SELECT DISTINCT * FROM category WHERE status = 1 ORDER BY id DESC LIMIT  0,6');
+    $result = mysqli_query($con, 'SELECT DISTINCT * FROM category ORDER BY id ASC LIMIT  0,6');
     echo "<select class='form-control' name='categoryname'>";
     echo "<option value=''>Selecionar</option>";
         while ($row = mysqli_fetch_array($result)) {
@@ -98,7 +97,7 @@ function select_category_edit() {
     $con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
     # here database details
     mysqli_select_db($con, DB_NAME);
-    $result = mysqli_query($con, 'SELECT DISTINCT * FROM category WHERE status = 1 ORDER BY id DESC LIMIT  0,6');
+    $result = mysqli_query($con, 'SELECT DISTINCT * FROM category ORDER BY id ASC LIMIT  0,6');
     echo "<select class='form-control' name='categoryname'>";
     echo "<option value=''>Selecionar</option>";
     while ($row = mysqli_fetch_array($result)) {
