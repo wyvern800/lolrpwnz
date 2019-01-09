@@ -4,7 +4,7 @@ onde houverá uma página de listagem dos comandos funcionais da minha livestrea
 
 ## O que há no site atualmente
 *  **CRUD** completo.
-* Sistema de login com encryption MD5 **(Sujeita a ser substituída)**.
+* Sistema de login com encryption BCrypt.
 * Cadastro de usuários com níveis de acesso (**Roles**).
 * Cadastro de comandos com categorias.
 * Cadastro de notícias (**W.I.P**).
