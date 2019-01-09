@@ -25,7 +25,7 @@ index();
                 <div class="input-group h2">
                     <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Usuários">
                     <span class="input-group-btn">
-                <button class="btn btn-primary" type="submit">
+                    <button class="btn btn-primary disabled" type="submit">
                     <span class="glyphicon glyphicon-search"></span>
                 </button>
             </span>
@@ -86,16 +86,16 @@ index();
 
 <?php include('modal.php'); ?>
 
-<!--bottom - Pagination -->
+    <!--bottom - Pagination -->
     <div id="bottom" class="row">
         <div class="col-md-12" align="center">
 
             <ul class="pagination">
                 <li class="disabled"><a>&lt; Anterior</a></li>
-                <li class="disabled"><a>1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li class="next"><a href="#" rel="next">Próximo &gt;</a></li>
+                <li class="active"><a>1</a></li>
+                <li class="disabled"><a href="#">2</a></li>
+                <li class="disabled"><a href="#">3</a></li>
+                <li class="next disabled"><a href="#" rel="next">Próximo &gt;</a></li>
             </ul><!-- /.pagination -->
 
         </div>

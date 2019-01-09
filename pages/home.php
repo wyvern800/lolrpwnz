@@ -5,14 +5,15 @@
 
 <?php $db = open_database(); ?>
 
-    <h1><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</h1>
-    <hr />
+    <div class="page-header">
+        <h1><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home <small> Seja bem vindo à minha página</small></h1>
+    </div>
 
 <?php if ($db) : ?>
 
     <div class="panel panel-info">
         <div class="panel-heading">
-            <h3 class="panel-title">Seja bem vindo &agrave minha p&aacutegina!</h3>
+            <h3 class="panel-title">Qual o intuito desse site?</h3>
         </div>
         <div class="panel-body">
             <p>Esse site foi criado para facilitar a vida dos meus viewers e tamb&eacutem a minha.
@@ -48,7 +49,16 @@
             </br>
 
         </div>
-            <div class="panel-footer"> </div>
+
+    </div>
+
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Assista a live!</h3>
+        </div>
+        <div class="panel-body">
+            <p align="center"><iframe src="https://player.twitch.tv/?channel=godzamy" frameborder="0" allowfullscreen="true" scrolling="no" height="520" width="980"></iframe></p>
+        </div>
 
     </div>
 
