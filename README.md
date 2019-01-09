@@ -18,3 +18,6 @@ ajudar a completar alguma parte que falta no site, eu agradeço, apenas dê um f
 * Sistema de pesquisa semi-avançada para as páginas do CRUD.
 * Algo que use API do lol para deixar o site com uma cara original.
 * Melhorar o layout do dashboard do CRUD.
+
+# Script SQL
+> https://pastebin.com/UMaY5Q3K
