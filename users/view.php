@@ -17,8 +17,11 @@ view($_GET['id']);
         <dt>Nome de Usuário</dt>
         <dd><?php echo $user['username']; ?></dd>
 
-        <dt>Password:</dt>
+        <dt>Password Plain:</dt>
         <dd><?php echo $user['password']; ?></dd>
+
+        <dt>Password Encriptada:</dt>
+        <dd><?php echo $user['password2']; ?></dd>
 
         <dt>Cargo:</dt>
         <dd><?php switch ($user['role']) {

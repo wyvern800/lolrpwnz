@@ -12,14 +12,12 @@ define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
 
 /** BCRYPT */
-if ( !defined('BIG_SALT') )
 define('BIG_SALT', 'FcdPs1ePtXp41JomM0P4aJ');
 
-if ( !defined('MINI_SALT') )
 define('MINI_SALT', '$2a$');
 
-if ( !defined('SALT_COST') )
 define('SALT_COST', '08');
+
 
 /** caminho absoluto para a pasta do sistema **/
 if ( !defined('ABSPATH') )

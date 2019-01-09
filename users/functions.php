@@ -25,9 +25,8 @@ function add() {
 
 
         $user = $_POST['user'];
-        $encript = crypt($user['password'], MINI_SALT . SALT_COST . '$' . BIG_SALT . '$');
 
-        $user['password2'] = $encript;
+        $user['password2'] = crypt($user['password'], MINI_SALT . SALT_COST . '$' . BIG_SALT . '$');;
 
         $user['modified'] = $user['created'] = $today->format("Y-m-d H:i:s");
         $user['active'] = 1;

@@ -5,7 +5,7 @@ add();
 $today =
     date_create('now', new DateTimeZone('America/Sao_Paulo'));
 ?>
-    <title><?php echo WEBSITE_NAME?> - Comandos</title>
+    <title><?php echo WEBSITE_NAME; ?> - Comandos</title>
 <?php include(HEADER_TEMPLATE); ?>
 
     <h2>Novo Comando</h2>
@@ -15,12 +15,12 @@ $today =
         <hr />
         <div class="row">
            <div class="form-group col-md-2">
-                <label for="campo2">Nome do Comando</label>
+                <label for="campo1">Nome do Comando</label>
                 <input type="text" class="form-control" name="command['commandname']" placeholder="!comando">
             </div>
 
             <div class="form-group col-md-2">
-                <label for="campo3">Ação</label>
+                <label for="campo2">Ação</label>
                 <input type="text" class="form-control" name="command['action']" placeholder="Qual a ação do comando">
             </div>
 
@@ -30,12 +30,12 @@ $today =
             </div>-->
 
             <div class="form-group col-md-2">
-                <label for="campo2">Categoria</label>  <a href=<?php echo BASEURL."category/add.php" ?>><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></a>
+                <label for="campo3">Categoria</label>  <a href=<?php echo BASEURL."category/add.php" ?>><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></a>
                 <?php select_category(); ?>
             </div>
 
             <div class="form-group col-md-3">
-                <label for="campo1">Exemplo</label>
+                <label for="campo4">Exemplo</label>
                 <input type="text" class="form-control" name="command['example']" placeholder="Deixe em branco se não houver...">
             </div>
 
