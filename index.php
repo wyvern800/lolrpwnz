@@ -52,7 +52,7 @@
             </div>
 
             <div class="col-xs-6 col-sm-3 col-md-2">
-                <a href="news" class="btn btn-default">
+                <a href="category" class="btn btn-default">
                     <div class="row">
                         <div class="col-xs-12 text-center">
                             <i class="glyphicon glyphicon-tag fa-2x"></i>
