@@ -45,14 +45,14 @@ $total = mysqli_num_rows($dados);
                 do {
                     ?>
                     <tr>
-                        <td><kbd>!<?=$item->commandname;?></kbd></td>
+                        <td style="text-align:center;vertical-align:middle";><kbd>!<?=$item->commandname;?></kbd></td>
                         <td><?php if ($item->example != null) {
                             echo $item->action." - <abbr title='". $item->example."'><span class=\"glyphicon glyphicon-question-sign\" aria-hidden=\"true\"></span></abbr>";
                         } else {
                             echo $item->action != null ? $item->action : "Sem ações";
                         }?></td>
-                        <td><?php echo ($item->cooldown == 0 ? "Não tem" : $item->cooldown.' minutos</td>');?>
-                        <td><?php
+                        <td style="text-align:center;vertical-align:middle";><?php echo ($item->cooldown == 0 ? "Não tem" : $item->cooldown.' minutos</td>');?>
+                        <td style="text-align:center;vertical-align:middle";><?php
                         if ($item->price == 0) {
                             echo "<span class=\"label label-success\">GR&Aacute;TIS</span>";
                         } else if ($item->price <= 100) {

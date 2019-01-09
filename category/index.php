@@ -52,20 +52,20 @@ index();
     <table class="table table-hover table-striped table-bordered table-condensed">
         <thead>
         <tr>
-            <th width="5%">ID</th>
+            <th width="4%">ID</th>
             <th width="65%">Nome da Categoria</th>
-            <th width="30%">Ações</th>
+            <th width="20%">Ações</th>
         </tr>
         </thead>
         <tbody>
         <?php if ($categories) : ?>
             <?php foreach ($categories as $category) : ?>
                 <tr>
-                    <td><?php echo $category['id']; ?></td>
-                    <td><?php echo $category['categoryname']; ?></td>
+                    <td style="text-align:center;vertical-align:middle";><?php echo $category['id']; ?></td>
+                    <td style="vertical-align:middle";><?php echo $category['categoryname']; ?></td>
 
                    <!-- voltar linha aq -->
-                    <td class="actions text-right">
+                    <td class="actions text-right" style="text-align:center;vertical-align:middle";>
                         <a href="view.php?id=<?php echo $category['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
                         <a href="edit.php?id=<?php echo $category['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
                         <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $category['id']; ?>">

@@ -54,9 +54,9 @@ index();
         <tr>
             <th>ID</th>
             <th width="12%">Comando</th>
-            <th width="40%">Ação</th>
+            <th width="45%">Ação</th>
             <th>Cooldown</th>
-            <th width="15%">Preço</th>
+            <th width="7%">Preço</th>
             <th>Ações</th>
         </tr>
         </thead>
@@ -65,8 +65,8 @@ index();
         <?php if ($commands) : ?>
             <?php foreach ($commands as $command) : ?>
                 <tr>
-                    <td><?php echo $command['id']; ?></td>
-                    <td><kbd>!<?php echo $command['commandname']; ?></kbd>
+                    <td style="text-align:center;vertical-align:middle";><?php echo $command['id']; ?></td>
+                    <td style="text-align:center;vertical-align:middle";><kbd>!<?php echo $command['commandname']; ?></kbd>
 
                         <?php
                         /**
@@ -82,7 +82,7 @@ index();
                         ?>
 
                     </td>
-                    <td>
+                    <td style="vertical-align:middle";>
                         <?php
                         if ($command['example'] != null) {
                             echo $command['action'] != null ? $command['action'] : "Sem ações"." - <abbr title='". $command['example']."'>Exemplo</abbr>";
@@ -91,8 +91,8 @@ index();
                         }
                         ?>
                     </td>
-                    <td><?php echo $command['cooldown']; ?> min</td>
-                    <td>
+                    <td style="text-align:center;vertical-align:middle";><?php echo $command['cooldown']; ?> min</td>
+                    <td style="text-align:center;vertical-align:middle";>
                     <?php
                     if ($command['price'] == 0) {
                         echo "<span class=\"label label-success\">GR&Aacute;TIS</span>";
@@ -107,7 +107,7 @@ index();
                     </td>
 
                    <!-- voltar linha aq -->
-                    <td class="actions text-right">
+                    <td class="actions text-right" style="text-align:center;vertical-align:middle";>
                         <a href="view.php?id=<?php echo $command['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
                         <a href="edit.php?id=<?php echo $command['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
                         <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $command['id']; ?>">

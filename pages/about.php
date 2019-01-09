@@ -16,9 +16,6 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <p align="center">
-                            <img src="../assets/1.jpg" class="img-circle" width="120" height="120">
-                            <img src="../assets/2.jpg" class="img-circle" width="120" height="120">
-                            <img src="../assets/3.png" class="img-circle" width="120" height="120">
                             <img src="../assets/4.jpg" class="img-circle" width="120" height="120">
                             <img src="../assets/5.jpg" class="img-circle" width="120" height="120">
                             <img src="../assets/6.jpg" class="img-circle" width="120" height="120">

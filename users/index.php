@@ -63,11 +63,11 @@ index();
         <?php if ($users) : ?>
             <?php foreach ($users as $user) : ?>
                 <tr>
-                    <td><?php echo $user['id']; ?></td>
-                    <td><?php echo $user['username']; ?></td>
+                    <td style="text-align:center;vertical-align:middle";><?php echo $user['id']; ?></td>
+                    <td style="vertical-align:middle";><?php echo $user['username']; ?></td>
                     <td><?php echo $user['realname']; ?></td>
-                    <td><?php echo $user['modified']; ?></td>
-                    <td class="actions text-right">
+                    <td style="text-align:center;vertical-align:middle";><?php echo $user['modified']; ?></td>
+                    <td class="actions text-right" style="text-align:center;vertical-align:middle";>
                         <a href="view.php?id=<?php echo $user['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
                         <a href="edit.php?id=<?php echo $user['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
                         <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $user['id']; ?>">

@@ -17,9 +17,6 @@ view($_GET['id']);
         <dt>Categoria</dt>
         <dd><b><?php echo strtoupper($category['categoryname']); ?></b>
         </dd>
-
-        <dt>Status:</dt>
-        <dd><?php echo $category['status']; ?></dd>
     </dl>
 
     <div id="actions" class="row">
