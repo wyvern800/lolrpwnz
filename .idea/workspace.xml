@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ade708c-8971-4777-bc2b-364801940c48" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="1ade708c-8971-4777-bc2b-364801940c48" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -254,16 +252,15 @@
       <workItem from="1546959129968" duration="325000" />
       <workItem from="1546966643040" duration="31483000" />
       <workItem from="1547001222833" duration="541000" />
-      <workItem from="1547001799972" duration="3613000" />
+      <workItem from="1547001799972" duration="3685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43462000" />
+    <option name="totallyTimeSpent" value="43534000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="1" />
