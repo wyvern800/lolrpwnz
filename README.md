@@ -21,3 +21,6 @@ ajudar a completar alguma parte que falta no site, eu agradeço, apenas dê um f
 
 # Script SQL
 > https://pastebin.com/UMaY5Q3K
+
+# Live preview
+> https://godzamy.000webhostapp.com/lolrpwnz/pages/commands.php
